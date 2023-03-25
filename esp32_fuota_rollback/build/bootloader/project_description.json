@@ -1,0 +1,21 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "C:/Users/Pedro/esp/esp-idf/components/bootloader/subproject",
+    "build_dir":          "D:/eoc2023/codigo_fonte/esp32_fuota_rollback/build/bootloader",
+    "config_file":        "D:/eoc2023/codigo_fonte/esp32_fuota_rollback/sdkconfig",
+    "config_defaults":    "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "git_revision":       "v4.4.1",
+    "target":             "esp32s3",
+    "rev":                "",
+    "phy_data_partition": "",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "C:/Users/Pedro/esp/esp-idf/components/efuse/Kconfig;C:/Users/Pedro/esp/esp-idf/components/esp32s3/Kconfig;C:/Users/Pedro/esp/esp-idf/components/esp_common/Kconfig;C:/Users/Pedro/esp/esp-idf/components/esp_hw_support/Kconfig;C:/Users/Pedro/esp/esp-idf/components/esp_system/Kconfig;C:/Users/Pedro/esp/esp-idf/components/freertos/Kconfig;C:/Users/Pedro/esp/esp-idf/components/hal/Kconfig;C:/Users/Pedro/esp/esp-idf/components/log/Kconfig;C:/Users/Pedro/esp/esp-idf/components/newlib/Kconfig;C:/Users/Pedro/esp/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "C:/Users/Pedro/esp/esp-idf/components/bootloader/Kconfig.projbuild;C:/Users/Pedro/esp/esp-idf/components/esp_rom/Kconfig.projbuild;C:/Users/Pedro/esp/esp-idf/components/esptool_py/Kconfig.projbuild;C:/Users/Pedro/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp32s3", "esp_common", "esp_hw_support", "esp_rom", "esp_system", "esptool_py", "freertos", "hal", "log", "main", "micro-ecc", "newlib", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "C:/Users/Pedro/esp/esp-idf/components/bootloader", "C:/Users/Pedro/esp/esp-idf/components/bootloader_support", "C:/Users/Pedro/esp/esp-idf/components/efuse", "C:/Users/Pedro/esp/esp-idf/components/esp32s3", "C:/Users/Pedro/esp/esp-idf/components/esp_common", "C:/Users/Pedro/esp/esp-idf/components/esp_hw_support", "C:/Users/Pedro/esp/esp-idf/components/esp_rom", "C:/Users/Pedro/esp/esp-idf/components/esp_system", "C:/Users/Pedro/esp/esp-idf/components/esptool_py", "C:/Users/Pedro/esp/esp-idf/components/freertos", "C:/Users/Pedro/esp/esp-idf/components/hal", "C:/Users/Pedro/esp/esp-idf/components/log", "C:/Users/Pedro/esp/esp-idf/components/bootloader/subproject/main", "C:/Users/Pedro/esp/esp-idf/components/bootloader/subproject/components/micro-ecc", "C:/Users/Pedro/esp/esp-idf/components/newlib", "C:/Users/Pedro/esp/esp-idf/components/partition_table", "C:/Users/Pedro/esp/esp-idf/components/soc", "C:/Users/Pedro/esp/esp-idf/components/spi_flash", "C:/Users/Pedro/esp/esp-idf/components/xtensa", "" ]
+}

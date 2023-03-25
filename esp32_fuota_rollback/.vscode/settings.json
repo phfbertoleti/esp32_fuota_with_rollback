@@ -1,0 +1,28 @@
+{
+  "C_Cpp.intelliSenseEngine": "Tag Parser",
+  "idf.portWin": "COM8",
+  "idf.flashType": "UART",
+  "idf.adapterTargetName": "esp32s3",
+  "files.associations": {
+    "nvs_rw.h": "c",
+    "freertos.h": "c",
+    "esp32_ota.h": "c",
+    "array": "c",
+    "bitset": "c",
+    "string_view": "c",
+    "initializer_list": "c",
+    "regex": "c",
+    "utility": "c",
+    "wifi_st_ap.h": "c",
+    "esp_log.h": "c",
+    "gpio.h": "c",
+    "*.inc": "c",
+    "*.ipp": "c",
+    "*.tcc": "c",
+    "event_groups.h": "c",
+    "socket_tcp_server_wifi_ota.h": "c",
+    "prio_tasks.h": "c",
+    "cerrno": "c",
+    "breathing_light.h": "c"
+  }
+}

@@ -1,0 +1,89 @@
+# Kconfig with all configs for this project
+menu "Config wifi"
+
+    config ESP_WIFI_ST_SSID
+        string "SSID - WiFi"
+        default "PedroBertoleti_proj"
+        help
+            Wi-Fi SSID
+
+    config ESP_WIFI_ST_PASSWORD
+        string "WiFi password"
+        default "proj12345"
+        help
+            Wi-Fi password
+
+    config ESP_WIFI_ST_STATIC_IP
+        string "Wi-Fi static IP"
+        default "192.168.0.145"
+        help
+            Wi-Fi static IP for ESP32
+            
+    config ESP_WIFI_ST_GATEWAY
+        string "Gateway IP"
+        default "192.168.0.1"
+        help
+            Gateway IP   
+            
+    config ESP_WIFI_ST_NETWORK_MASK
+        string "Network mask"
+        default "255.255.255.0"
+        help
+            Network mask          
+            
+    config ESP_WIFI_PORT_SOCKET_TCP_SERVER
+        int "TCP socket server port"
+        range 1 65535
+        default 5000
+        help
+            TCP socket server port         
+
+    config ESP_WIFI_SOCKET_TCP_SERVER_KEEPALIVE_IDLE
+        int "Idle keep alive time (s)"
+        default 5
+        help
+            Idle keep alive time
+
+    config ESP_WIFI_SOCKET_TCP_SERVER_KEEPALIVE_INTERVAL
+        int "Intern keep alive time (s)"
+        default 5
+        help
+            Intern keep alive time
+
+    config ESP_WIFI_SOCKET_TCP_SERVER_KEEPALIVE_COUNT
+        int "Max attempts of keep alive send"
+        default 10
+        help
+            Max attempts of keep alive send     
+
+    config ESP_WIFI_SOCKET_TCP_SERVER_RCV_BUFFER_SIZE
+        int "Received bytes buffer size (TCP socket server)"
+        default 1024
+        help
+            Received bytes buffer size (TCP socket server)               
+
+    choice ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD
+        prompt "Minimal wi-fi security allowed"
+        default ESP_WIFI_AUTH_WPA_WPA2_PSK
+        help
+            Minimal wi-fi security allowed  
+
+        config ESP_WIFI_AUTH_OPEN
+            bool "OPEN"
+        config ESP_WIFI_AUTH_WEP
+            bool "WEP"
+        config ESP_WIFI_AUTH_WPA_PSK
+            bool "WPA PSK"
+        config ESP_WIFI_AUTH_WPA2_PSK
+            bool "WPA2 PSK"
+        config ESP_WIFI_AUTH_WPA_WPA2_PSK
+            bool "WPA/WPA2 PSK"
+        config ESP_WIFI_AUTH_WPA3_PSK
+            bool "WPA3 PSK"
+        config ESP_WIFI_AUTH_WPA2_WPA3_PSK
+            bool "WPA2/WPA3 PSK"
+        config ESP_WIFI_AUTH_WAPI_PSK
+            bool "WAPI PSK"
+    endchoice
+
+endmenu
