@@ -13,5 +13,5 @@ Here are some important notes regarding this example:
 
 * This example has been developed using ESP-IDF v4.4
 * ESP32 received the firmware via TCP socket in port 5000. This example makes no distinguish between any kind of data received, considering everything piece of data received as a firmware chunk.
-* After receiving at least one data chunk, if nothing was received in the lst 5 seconds, ESP32 considers firmware transmission has ended, and tries to update firmware.
+* After receiving at least one data chunk, if nothing was received in the last 5 seconds, ESP32 considers firmware transmission has ended, and tries to update firmware.
 * This repository contains 2 firmware binaries for testing rollback mechanism: good firmware (V1.2) and bad firmware (V1.3).
